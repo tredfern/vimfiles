@@ -20,3 +20,4 @@ au BufRead,BufNewFile *.pay set filetype=aspvbs
 
 "mappings
 map <C-f> :NERDTree<CR>
+map <F7> :!rspec %<CR>
