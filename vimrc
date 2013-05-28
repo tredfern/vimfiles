@@ -21,3 +21,6 @@ au BufRead,BufNewFile *.pay set filetype=aspvbs
 "mappings
 map <C-f> :NERDTree<CR>
 map <F7> :!rspec %<CR>
+
+
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
