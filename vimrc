@@ -23,4 +23,17 @@ map <C-f> :NERDTree<CR>
 map <F7> :!rspec %<CR>
 
 
-set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+"statusline setup
+set statusline=%f "tail of the filename
+
+"Git
+set statusline+=%{fugitive#statusline()}
+
+"RVM
+set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''}
+
+set statusline+=%= "left/right separator
+set statusline+=%c, "cursor column
+set statusline+=%l/%L "cursor line/total lines
+set statusline+=\ %P "percent through file
+set laststatus=2 "Gets the status line to show up
