@@ -4,6 +4,7 @@ execute pathogen#infect()
 set t_Co=256
 colorscheme lucius
 LuciusDark
+:let mapleader=","
 
 "Line numbers
 set number
@@ -21,6 +22,7 @@ au BufRead,BufNewFile *.pay set filetype=aspvbs
 "mappings
 map <C-f> :NERDTree<CR>
 map <F7> :!rspec %<CR>
+nmap <leader>md :%!markdown.pl --html4tags<cr>
 
 
 "statusline setup
@@ -37,3 +39,7 @@ set statusline+=%c, "cursor column
 set statusline+=%l/%L "cursor line/total lines
 set statusline+=\ %P "percent through file
 set laststatus=2 "Gets the status line to show up
+
+"PayTrace ASP Deployment helpers
+command ToStage !scripts/deploy_file_to_stage.sh %
+command ToTest !scripts/deploy_file_to_test.sh %
