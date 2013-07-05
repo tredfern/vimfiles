@@ -23,6 +23,7 @@ au BufRead,BufNewFile *.pay set filetype=aspvbs
 map <C-f> :NERDTree<CR>
 map <F7> :!rspec %<CR>
 nmap <leader>md :%!markdown.pl --html4tags<cr>
+nmap <leader>t :CtrlP<cr>
 
 
 "statusline setup
