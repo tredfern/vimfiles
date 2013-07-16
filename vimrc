@@ -5,6 +5,7 @@ set t_Co=256
 colorscheme lucius
 LuciusDark
 :let mapleader=","
+:filetype on
 
 "Line numbers
 set number
@@ -13,11 +14,9 @@ set softtabstop=2
 set shiftwidth=2
 set autoindent
 set hidden  "Allows you to switch buffers without saving
+set hlsearch
 syntax on
 filetype plugin indent on
-
-" Set up .pay files to aspvbs
-au BufRead,BufNewFile *.pay set filetype=aspvbs
 
 "mappings
 map <C-f> :NERDTree<CR>
@@ -44,3 +43,4 @@ set laststatus=2 "Gets the status line to show up
 "PayTrace ASP Deployment helpers
 command ToStage !scripts/deploy_file_to_stage.sh %
 command ToTest !scripts/deploy_file_to_test.sh %
+command ToDev !scripts/deploy_file_to_dev.sh %
