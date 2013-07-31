@@ -24,6 +24,7 @@ map <F7> :!rspec %<CR>
 nmap <leader>md :%!markdown.pl --html4tags<cr>
 nmap <leader>t :CtrlP<cr>
 
+nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
 "statusline setup
 set statusline=%f "tail of the filename

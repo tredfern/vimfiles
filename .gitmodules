@@ -22,3 +22,9 @@
 [submodule "bundle/puppet"]
 	path = bundle/puppet
 	url = https://github.com/rodjek/vim-puppet.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/node"]
+	path = bundle/node
+	url = git://github.com/mmalecki/vim-node.js.git
