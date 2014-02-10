@@ -20,7 +20,7 @@ filetype plugin indent on
 
 "mappings
 map <C-f> :NERDTree<CR>
-map <F7> :!rspec %<CR>
+map <F7> :!rspec -b %<CR>
 nmap <leader>md :%!markdown.pl --html4tags<cr>
 nmap <leader>t :CtrlP<cr>
 
