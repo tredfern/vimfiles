@@ -2,8 +2,7 @@ execute pathogen#infect()
 
 "color scheme
 set t_Co=256
-colorscheme lucius
-LuciusDark
+colorscheme molokai
 :let mapleader=","
 :filetype on
 
@@ -44,3 +43,7 @@ set laststatus=2 "Gets the status line to show up
 command ToStage !scripts/deploy_file_to_stage.sh %
 command ToTest !scripts/deploy_file_to_test.sh %
 command ToDev !scripts/deploy_file_to_dev.sh %
+
+autocmd FileType aspvbs setlocal shiftwidth=4 softtabstop=4
+autocmd FileType aspvbs setlocal tabstop=4 
+
