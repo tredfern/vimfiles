@@ -15,6 +15,6 @@ Switch to the `~/.vim` directory, and fetch submodules:
 
 Solarize 
   
-  To get solarize working properly need to install color scheme into your terminal.
-  Read More: [Solarized](http://ethanschoonover.com/solarized)
+    To get solarize working properly need to install color scheme into your terminal.
+    Read More: [Solarized](http://ethanschoonover.com/solarized)
 
