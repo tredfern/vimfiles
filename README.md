@@ -13,7 +13,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule init
     git submodule update
 
-Solarize 
+Solarize: 
   
     To get solarize working properly need to install color scheme into your terminal.
     Read More: [Solarized](http://ethanschoonover.com/solarized)
