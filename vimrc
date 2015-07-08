@@ -2,11 +2,10 @@ execute pathogen#infect()
 
 "color scheme
 set t_Co=256
-colorscheme lucius
-LuciusDark
+colorscheme solarized
 :let mapleader=","
 :filetype on
-
+set background=dark
 "Line numbers
 set number
 set expandtab
