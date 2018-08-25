@@ -39,11 +39,4 @@ set statusline+=%l/%L "cursor line/total lines
 set statusline+=\ %P "percent through file
 set laststatus=2 "Gets the status line to show up
 
-"PayTrace ASP Deployment helpers
-command ToStage !scripts/deploy_file_to_stage.sh %
-command ToTest !scripts/deploy_file_to_test.sh %
-command ToDev !scripts/deploy_file_to_dev.sh %
-
-autocmd FileType aspvbs setlocal shiftwidth=4 softtabstop=4
-autocmd FileType aspvbs setlocal tabstop=4 
 
