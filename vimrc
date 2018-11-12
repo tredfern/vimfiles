@@ -39,4 +39,4 @@ set statusline+=%l/%L "cursor line/total lines
 set statusline+=\ %P "percent through file
 set laststatus=2 "Gets the status line to show up
 
-
+let g:licenses_copyright_holders_name = 'Redfern, Trevor <trevorredfern@gmail.com>' 

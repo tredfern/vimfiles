@@ -1,0 +1,5 @@
+Copyright (c) <year> <name of copyright holder>
+<name of author>
+ 
+This software is released under the MIT License.
+https://opensource.org/licenses/MIT
